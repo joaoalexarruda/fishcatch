@@ -15,3 +15,11 @@ On the original dataset, there was a variable called 'Sex' which was removed fro
 ## ASSIGNMENT REQUIREMENTS
 
 The assignment requires the tasks described in the [pdf](./task-description/ADAA_23.24_TrabalhoPrático.pdf) file.
+
+## DEPENDENCIES
+
+Run the following command on a python environment to install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
