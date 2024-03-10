@@ -1,20 +1,28 @@
 import streamlit as st
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
-st.set_page_config(
-    page_title="Fishcatch",
-    page_icon="🐟",
-)
 
-st.title('Fishcatch')
+def app():
+    st.set_page_config(
+        page_title="Fishcatch",
+        page_icon="🐟",
+    )
 
-st.markdown(
-    '''
-    ## A simple example of linear and polynomial regression using Python and Scikit-learn
-by [joaoalexarruda](https://github.com/joaoalexarruda)
-    '''
-)
+    col1, col2 = st.columns(2)
 
-st.divider()
+    with col1:
+        st.title('Fishcatch')
+        
+    with col2:
+        st.image('https://imgur.com/23DiEOf.png', width=140)
+
+    st.markdown(
+        '''
+        ## A simple app to predict the width of a fish based on its features.
+        by [joaoalexarruda](https://github.com/joaoalexarruda)
+        '''
+    )
+
+    st.divider()
+
+
+app()
