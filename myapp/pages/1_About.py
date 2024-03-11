@@ -22,5 +22,4 @@ The goal is to apply machine learning techniques to the dataset and to evaluate 
     )
     
     
-    
 about()
