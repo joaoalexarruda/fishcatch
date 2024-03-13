@@ -7,14 +7,22 @@ def app():
     col1, col2 = st.columns(2)
 
     with col1:
-        st.title('Fishcatch: Predicting the width of a fish based on its features.')
+        st.title('Fishcatch')
 
     with col2:
-        st.image('https://imgur.com/23DiEOf.png', width=140)
+        st.markdown(
+            """
+            <div style="text-align: center">
+                <img src="https://imgur.com/h7ppyOC.png" width="140">
+            </div>
+        """,
+            unsafe_allow_html=True,
+        )
+
+    st.write('Predicting the width of a fish based on its features.')
 
     st.markdown(
         '''
-        ## A simple app to predict the width of a fish based on its features.
         by [joaoalexarruda](https://github.com/joaoalexarruda)
         '''
     )
