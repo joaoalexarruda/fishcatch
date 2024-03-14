@@ -41,4 +41,4 @@ pip install -r requirements.txt
 
 ## Streamlit App (EXTRA)
 
-There is a simple web app that uses the trained model to make predictions. It's still under development and can be found in the [myapp](./myapp) folder.
+There is a simple web app that uses the trained model to let any user make predictions in a friendly page. It's still under development and can be found in the [myapp](./myapp) folder.
