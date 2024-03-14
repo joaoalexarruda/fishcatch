@@ -13,7 +13,10 @@ def plot_regression(y_test, y_pred, title: str, regression_type: str = 'Linear')
 
     fig, ax = plt.subplots(figsize=(10, 5), dpi=1080)
     ax.scatter(y_test, y_pred, color='blue', label='Predicted Width')
-    ax.plot(y_test, y_test, color='red', label='Actual Width')
+    
+    if regression_type == 'Linear':
+        ax.plot(y_test, y_test, color='red', label='Actual Width')
+        
     ax.set_xlabel('Actual Width')
     ax.set_ylabel('Predicted Width')
     ax.set_title(f'{regression_type} Regression: {title}')
