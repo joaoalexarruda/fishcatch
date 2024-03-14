@@ -1,4 +1,4 @@
-# Fishcatch
+# Fishcatch (Under Development)
 
 by [joaoalexarruda](https://github.com/joaoalexarruda)
 
@@ -16,6 +16,8 @@ The notebooks are organized in the following way:
 - [n3](./notebooks/n3_polynomial_regression.ipynb): Polynomial Regression
 - [n4](./notebooks/n4_linear_and_polynomial_regression.ipynb): Linear and Polynomial Regression
 - [n5](./notebooks/n5_comparison_conclusion.ipynb): Conclusion
+
+There is also a navbar at the bottom of each notebook to navigate between them.
 
 ## Description of the dataset
 
@@ -37,6 +39,6 @@ Run the following command on a python environment to install the required depend
 pip install -r requirements.txt
 ```
 
-## Streamlit App
+## Streamlit App (EXTRA)
 
-There is a simple web app that uses the trained model to predict the width of a fish based on the other variables. It's still under development and can be found in the [myapp](./myapp) folder.
+There is a simple web app that uses the trained model to make predictions. It's still under development and can be found in the [myapp](./myapp) folder.
