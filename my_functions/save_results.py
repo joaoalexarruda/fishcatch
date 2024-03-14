@@ -3,10 +3,20 @@ import os
 
 
 def save_results(mse, mae, r2, rmse, train_r2, model_name):
+    """Saves the results of the model to a csv file.
+
+    Args:
+        mse (_type_): mean squared error
+        mae (_type_): mean absolute error
+        r2 (_type_): r-squared
+        rmse (_type_): root mean squared error
+        train_r2 (_type_): r-squared for the train set
+        model_name (_type_): name of the model
+    """
+
     # Check if the file exists
     file_exists = os.path.isfile('results.csv')
-
-    # Create a DataFrame
+    # Create a dataframe with the results
     results = pd.DataFrame({'Model': model_name,
                             'Mean Squared Error': mse,
                             'Mean Absolute Error': mae,
@@ -14,7 +24,7 @@ def save_results(mse, mae, r2, rmse, train_r2, model_name):
                             'Root Mean Squared Error': rmse,
                             'Train R²': train_r2}, index=[0])
 
-    # If the file exists, append the results. Otherwise, write the results and include the header.
+    # Save the results to a csv file
     if file_exists:
         results.to_csv('results.csv', mode='a', header=False, index=False)
     else:
