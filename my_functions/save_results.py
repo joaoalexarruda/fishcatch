@@ -19,6 +19,7 @@ def save_results(mse, mae, r2, rmse, train_r2, model_name):
         results.to_csv('results.csv', mode='a', header=False, index=False)
     else:
         results.to_csv('results.csv', mode='w', header=True, index=False)
+    results = pd.read_csv('results.csv').drop_duplicates()
+    results.to_csv('results.csv', mode='w', header=True, index=False)
 
     print('Results saved successfully to "results.csv".')
-    print('Remember to drop duplicates if you run the same model multiple times.')
