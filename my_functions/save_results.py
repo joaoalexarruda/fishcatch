@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 
-def save_results(mse, mae, r2, rmse, train_r2, model_name):
+def save_results(mse, mae, r2, rmse, train_r2, model_name, confirm=True):
     """Saves the results of the model to a csv file.
 
     Args:
@@ -31,5 +31,6 @@ def save_results(mse, mae, r2, rmse, train_r2, model_name):
         results.to_csv('results.csv', mode='w', header=True, index=False)
     results = pd.read_csv('results.csv').drop_duplicates()
     results.to_csv('results.csv', mode='w', header=True, index=False)
-
-    print('Results saved successfully to "results.csv".')
+    # Confirm the results were saved
+    if confirm:
+        print('Results saved successfully to "results.csv".')

@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
 
 
-def plot_regression(y_test, y_pred, title: str, regression_type: str = 'Linear', X_test=None):
+def plot_regression(y_test, y_pred, title: str, 
+                    regression_type: str = 'Linear', 
+                    X_test=None, xlabel='Actual Width', ylabel='Predicted Width'):
     """Plots the actual width vs predicted width using a scatter plot.
 
     Args:
@@ -20,8 +22,8 @@ def plot_regression(y_test, y_pred, title: str, regression_type: str = 'Linear',
         ax.scatter(X_test, y_test, color='blue', label='Actual Width')
         ax.plot(X_test, y_pred, color='red', label='Polynomial Regression')
 
-    ax.set_xlabel('Actual Width')
-    ax.set_ylabel('Predicted Width')
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
     ax.set_title(f'{regression_type} Regression: {title}')
     ax.grid(True, linestyle='--', alpha=0.6)
     ax.legend()
