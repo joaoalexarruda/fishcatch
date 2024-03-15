@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 import os
 
 
@@ -18,11 +19,11 @@ def save_results(mse, mae, r2, rmse, train_r2, model_name, confirm=True):
     file_exists = os.path.isfile('results.csv')
     # Create a dataframe with the results
     results = pd.DataFrame({'Model': model_name,
-                            'Mean Squared Error': mse,
-                            'Mean Absolute Error': mae,
-                            'R²': r2,
-                            'Root Mean Squared Error': rmse,
-                            'Train R²': train_r2}, index=[0])
+                            'Mean Squared Error (lower the better)': mse,
+                            'Mean Absolute Error (lower the better)': mae,
+                            'Root Mean Squared Error (lower the better)': rmse,
+                            'R² (closer to 1 the better)': r2,
+                            'Train R² (closer to 1 the better)': train_r2}, index=[0])
 
     # Save the results to a csv file
     if file_exists:
@@ -34,3 +35,15 @@ def save_results(mse, mae, r2, rmse, train_r2, model_name, confirm=True):
     # Confirm the results were saved
     if confirm:
         print('Results saved successfully to "results.csv".')
+
+
+def plot_results():
+    """Plots the results from the results.csv file."""
+    results = pd.read_csv('results.csv')
+    results.plot(kind='barh', x='Model', title='Model Performance',
+                 figsize=(10, 5), grid=True)
+    plt.grid(True, linestyle='--', alpha=0.6)
+    plt.ylabel('Model')
+    plt.xlabel('Performance Metric')
+    plt.legend()
+    plt.show()
