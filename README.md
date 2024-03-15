@@ -2,7 +2,7 @@
 
 by [joaoalexarruda](https://github.com/joaoalexarruda)
 
-This repository contains the 'fishcatch' dataset. The dataset is part of an assignment for the post graduation course ['Data Science and Digital Transformation'](https://www.ipportalegre.pt/pt/oferta-formativa/pos-graduacao-data-science-and-digital-transformation) at the Instituto Politécnico de Portalegre (IPP).
+This repository contains the 'fishcatch' dataset. This project is part of an assignment for the post graduation course ['Data Science and Digital Transformation'](https://www.ipportalegre.pt/pt/oferta-formativa/pos-graduacao-data-science-and-digital-transformation) at the Instituto Politécnico de Portalegre (IPP).
 
 The goal is to apply machine learning techniques to the dataset and to evaluate the results. In this case, regression techniques such as linear and polynomial regression will be used to predict the width of the fish based on the other variables.
 
@@ -16,8 +16,6 @@ The notebooks are organized in the following way:
 - [n3](./notebooks/n3_polynomial_regression.ipynb): Polynomial Regression
 - [n4](./notebooks/n4_linear_and_polynomial_regression.ipynb): Linear and Polynomial Regression
 - [n5](./notebooks/n5_comparison_conclusion.ipynb): Conclusion
-
-There is also a navbar at the bottom of each notebook to navigate between them.
 
 ## Description of the dataset
 
