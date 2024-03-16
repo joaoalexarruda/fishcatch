@@ -45,5 +45,5 @@ def plot_results():
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.ylabel('Model')
     plt.xlabel('Performance Metric')
-    plt.legend()
+    plt.legend(bbox_to_anchor=(0.5, -0.15), loc='upper center')
     plt.show()
