@@ -37,11 +37,22 @@ def save_results(mse, mae, r2, rmse, train_r2, model_name, confirm=True):
         print('Results saved successfully to "results.csv".')
 
 
-def plot_results():
-    """Plots the results from the results.csv file."""
+def plot_results(regression_model: str = 'Model'):
+    """Plots the results of the models selected.
+
+    Args:
+        regression_model (str, optional): _description_. Defaults to 'Model'.
+    """
     results = pd.read_csv('results.csv')
-    results.plot(kind='barh', x='Model', title='Model Performance',
-                 figsize=(10, 5), grid=True)
+    if regression_model == 'Model':
+        pass
+    else:
+        results = results.loc[results['Model'].str.contains(regression_model)]
+
+    results.plot(kind='barh', x='Model',
+                 title='Model Performance',
+                 figsize=(12, 8), grid=True)
+
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.ylabel('Model')
     plt.xlabel('Performance Metric')
