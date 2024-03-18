@@ -19,7 +19,9 @@ The notebooks are organized in the following way:
 
 ## Results
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nisl nec nunc tincidunt tincidunt.
+The results of the models are in the following image:
+
+![results](https://imgur.com/28IoFZE.png)
 
 ## Description of the dataset
 
