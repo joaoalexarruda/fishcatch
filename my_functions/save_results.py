@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import os
 
 
-def save_results(mse, mae, r2, rmse, train_r2, model_name, confirm=True):
+def save_results(mse, mae, r2, rmse,
+                 train_r2, model_name, confirm=True):
     """Saves the results of the model to a csv file.
 
     Args:
@@ -37,7 +38,8 @@ def save_results(mse, mae, r2, rmse, train_r2, model_name, confirm=True):
         print('Results saved successfully to "results.csv".')
 
 
-def plot_results(regression_model: str = 'Model'):
+def plot_results(regression_model: str = 'Model',
+                 plot_height: int = 8):
     """Plots the results of the models selected.
 
     Args:
@@ -51,7 +53,7 @@ def plot_results(regression_model: str = 'Model'):
 
     results.plot(kind='barh', x='Model',
                  title='Model Performance',
-                 figsize=(12, 8), grid=True)
+                 figsize=(12, plot_height), grid=True)
 
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.ylabel('Model')
