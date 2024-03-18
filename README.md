@@ -17,6 +17,10 @@ The notebooks are organized in the following way:
 - [n4](./notebooks/n4_linear_and_polynomial_regression.ipynb): Linear and Polynomial Regression
 - [n5](./notebooks/n5_comparison_conclusion.ipynb): Conclusion
 
+## Results
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec nisl nec nunc tincidunt tincidunt.
+
 ## Description of the dataset
 
 159 fishes of 7 species are caught and measured. Altogether there are 7 variables.  All the fishes are caught from the same lake (Laengelmavesi) near Tampere in Finland.
