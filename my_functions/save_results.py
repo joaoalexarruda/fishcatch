@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import numpy as np
 
 
 def save_results(mse, mae, r2, rmse,
@@ -38,7 +39,7 @@ def save_results(mse, mae, r2, rmse,
         print('Results saved successfully to "results.csv".')
 
 
-def plot_results(regression_model: str = 'Model',
+def plot_results(regression_model: str = 'All Models',
                  plot_height: int = 8):
     """Plots the results of the models selected.
 
@@ -46,7 +47,7 @@ def plot_results(regression_model: str = 'Model',
         regression_model (str, optional): _description_. Defaults to 'Model'.
     """
     results = pd.read_csv('results.csv')
-    if regression_model == 'Model':
+    if regression_model == 'All Models':
         pass
     else:
         results = results.loc[results['Model'].str.contains(regression_model)]
@@ -58,5 +59,6 @@ def plot_results(regression_model: str = 'Model',
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.ylabel('Model')
     plt.xlabel('Performance Metric')
+    plt.xticks(np.arange(0, 1.05, step=0.05))
     plt.legend(bbox_to_anchor=(0.5, -0.15), loc='upper center')
     plt.show()
