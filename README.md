@@ -17,12 +17,6 @@ The notebooks are organized in the following way:
 - [n4](./notebooks/n4_linear_and_polynomial_regression.ipynb): Linear and Polynomial Regression
 - [n5](./notebooks/n5_comparison_conclusion.ipynb): Conclusion
 
-## Results
-
-The results of the models are in the following image:
-
-![results](https://imgur.com/28IoFZE.png)
-
 ## Description of the dataset
 
 159 fishes of 7 species are caught and measured. Altogether there are 7 variables.  All the fishes are caught from the same lake (Laengelmavesi) near Tampere in Finland.
@@ -34,6 +28,12 @@ On the original dataset, there was a variable called 'Sex' which was removed fro
 ## Assignment requirements
 
 The assignment requires the tasks described in the [pdf](./task-description/ADAA_23.24_TrabalhoPrático.pdf) file.
+
+## Results
+
+The results of the models are in the following image:
+
+![results](https://imgur.com/28IoFZE.png)
 
 ## Dependencies
 
