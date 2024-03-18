@@ -40,11 +40,14 @@ def save_results(mse, mae, r2, rmse,
 
 
 def plot_results(regression_model: str = 'All Models',
-                 plot_height: int = 8):
-    """Plots the results of the models selected.
+                 plot_height: int = 8,
+                 save_plot: bool = False):
+    """Plots the metrics saved to results.csv
 
     Args:
-        regression_model (str, optional): _description_. Defaults to 'Model'.
+        regression_model (str, optional): The models you want on the plot. Defaults to 'All Models'.
+        plot_height (int, optional): Height of the plot (useful when there are many models to plot). Defaults to 8.
+        save_plot (bool, optional): Saves the plot as a png file. Defaults to False.
     """
     results = pd.read_csv('results.csv')
     if regression_model == 'All Models':
@@ -61,4 +64,9 @@ def plot_results(regression_model: str = 'All Models',
     plt.xlabel('Performance Metric')
     plt.xticks(np.arange(0, 1.05, step=0.05))
     plt.legend(bbox_to_anchor=(0.5, -0.15), loc='upper center')
+
+    if save_plot:
+        plt.savefig(f'results.png', bbox_inches='tight', dpi=300)
+        print(f'Plot saved as results.png')
+
     plt.show()
