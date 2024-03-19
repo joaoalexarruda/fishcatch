@@ -1,4 +1,8 @@
-# Fishcatch (Under Development)
+# Fishcatch
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/joaoalexarruda/fishcatch/HEAD)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/joaoalexarruda/fishcatch/blob/main/notebooks/n0_exploratory_analysis.ipynb)
+[![nbviewer](https://img.shields.io/badge/render-nbviewer-orange)](https://nbviewer.jupyter.org/github/joaoalexarruda/fishcatch/blob/main/notebooks/n0_exploratory_analysis.ipynb)
 
 by [joaoalexarruda](https://github.com/joaoalexarruda)
 
