@@ -2,7 +2,6 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-
 def app():
     st.set_page_config(page_title="Fishcatch", page_icon="🐟")
 
@@ -28,8 +27,9 @@ def app():
         by [joaoalexarruda](https://github.com/joaoalexarruda)
         '''
     )
-
-    loaded_model = joblib.load('model/linear_regression_model.pkl')
+    
+    
+    loaded_model = joblib.load('linear_regression_model.pkl')
 
     st.divider()
 
