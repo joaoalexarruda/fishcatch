@@ -1,6 +1,5 @@
 import streamlit as st
 import joblib
-import pandas as pd
 
 def app():
     st.set_page_config(page_title="Fishcatch", page_icon="🐟")
@@ -35,16 +34,14 @@ def app():
 
     st.write('### Make a prediction:')
 
-    df = pd.read_csv('../datasets/fishcatch/fishcatch.csv')
-
-    length1_min = df['Length1'].min()
-    length1_max = df['Length1'].max()
-    length2_min = df['Length2'].min()
-    length2_max = df['Length2'].max()
-    length3_min = df['Length3'].min()
-    length3_max = df['Length3'].max()
-    height_min = df['Height'].min()
-    height_max = df['Height'].max()
+    length1_min = 7.5
+    length1_max = 59
+    length2_min = 8.4
+    length2_max = 63.4
+    length3_min = 8.8
+    length3_max = 68
+    height_min = 1.7284
+    height_max = 18.957
 
     length1 = st.number_input(
         'Length1', min_value=length1_min, max_value=length1_max, value=length1_min)
