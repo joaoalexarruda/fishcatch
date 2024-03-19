@@ -15,7 +15,7 @@ def about():
 
 The goal is to apply machine learning techniques to the dataset and to evaluate the results. In this case, regression techniques such as linear and polynomial regression will be used to predict the width of the fish based on the other variables.
 
-[Click here to see the code](https://github.com/joaoalexarruda/fishcatch/blob/main/main.ipynb)
+[Click here to see the code](https://github.com/joaoalexarruda/fishcatch)
 
 '''
     
