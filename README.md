@@ -17,15 +17,6 @@ The notebooks are organized in the following way:
 - [n4](./notebooks/n4_linear_and_polynomial_regression.ipynb): Linear and Polynomial Regression
 - [n5](./notebooks/n5_comparison_conclusion.ipynb): Conclusion
 
-I highly recommend reading the notebooks in nbviewer, as the github rendering is not perfect. You can access the notebooks in nbviewer by clicking the following links:
-
-- <a href="https://nbviewer.jupyter.org/github/joaoalexarruda/fishcatch/blob/main/notebooks/n0_exploratory_analysis.ipynb" target="_blank">n0</a>
-- <a href="https://nbviewer.jupyter.org/github/joaoalexarruda/fishcatch/blob/main/notebooks/n1_linear_regression_1.ipynb" target="_blank">n1</a>
-- <a href="https://nbviewer.jupyter.org/github/joaoalexarruda/fishcatch/blob/main/notebooks/n2_linear_regression_2.ipynb" target="_blank">n2</a>
-- <a href="https://nbviewer.jupyter.org/github/joaoalexarruda/fishcatch/blob/main/notebooks/n3_polynomial_regression.ipynb" target="_blank">n3</a>
-- <a href="https://nbviewer.jupyter.org/github/joaoalexarruda/fishcatch/blob/main/notebooks/n4_linear_and_polynomial_regression.ipynb" target="_blank">n4</a>
-- <a href="https://nbviewer.jupyter.org/github/joaoalexarruda/fishcatch/blob/main/notebooks/n5_comparison_conclusion.ipynb" target="_blank">n5</a>
-
 ## Description of the dataset
 
 159 fishes of 7 species are caught and measured. Altogether there are 7 variables.  All the fishes are caught from the same lake (Laengelmavesi) near Tampere in Finland.
