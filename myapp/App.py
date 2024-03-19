@@ -29,7 +29,7 @@ def app():
         '''
     )
 
-    loaded_model = joblib.load('../notebooks/linear_regression_model.pkl')
+    loaded_model = joblib.load('model/linear_regression_model.pkl')
 
     st.divider()
 
