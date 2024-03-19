@@ -10,6 +10,12 @@ This repository contains the 'fishcatch' dataset. This project is part of an ass
 
 The goal is to apply machine learning techniques to the dataset and to evaluate the results. In this case, regression techniques such as linear and polynomial regression will be used to predict the width of the fish based on the other variables.
 
+## Streamlit Web App
+
+There is a simple web app that uses the trained model to let any user make predictions in a friendly page. Access it by clicking the following link:
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ipp-fishcatch-jsnlmhotzb5cksxqsxhpth.streamlit.app/)
+
 ## Notebooks
 
 I highly recommend reading the [notebooks](./notebooks/) in nbviewer, as the github rendering is not perfect. You can access the notebooks in nbviewer by clicking the following links:
@@ -46,7 +52,3 @@ Run the following command on a python environment to install the required depend
 ```bash
 pip install -r requirements.txt
 ```
-
-## Streamlit App (EXTRA)
-
-There is a simple web app that uses the trained model to let any user make predictions in a friendly page. It's still under development and can be found in the [myapp](./myapp) folder.
