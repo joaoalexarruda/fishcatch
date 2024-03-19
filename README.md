@@ -12,7 +12,7 @@ The goal is to apply machine learning techniques to the dataset and to evaluate 
 
 ## Notebooks
 
-I highly recommend reading the notebooks in nbviewer, as the github rendering is not perfect. You can access the notebooks in nbviewer by clicking the following links:
+I highly recommend reading the [notebooks](./notebooks/) in nbviewer, as the github rendering is not perfect. You can access the notebooks in nbviewer by clicking the following links:
 
 - [n0](https://nbviewer.jupyter.org/github/joaoalexarruda/fishcatch/blob/main/notebooks/n0_exploratory_analysis.ipynb): Exploratory Data Analysis
 - [n1](https://nbviewer.jupyter.org/github/joaoalexarruda/fishcatch/blob/main/notebooks/n1_linear_regression_1.ipynb): Linear Regression with all numeric variables
