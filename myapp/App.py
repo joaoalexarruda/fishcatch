@@ -35,11 +35,11 @@ def app():
     st.write('### Make a prediction:')
 
     length1_min = 7.5
-    length1_max = 59
+    length1_max = 59.0
     length2_min = 8.4
     length2_max = 63.4
     length3_min = 8.8
-    length3_max = 68
+    length3_max = 68.0
     height_min = 1.7284
     height_max = 18.957
 
