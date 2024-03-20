@@ -16,7 +16,7 @@ There is a simple web app that uses the trained model to let any user make predi
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ipp-fishcatch-jsnlmhotzb5cksxqsxhpth.streamlit.app/)
 
-![streamlit web app](https://imgur.com/9BKCGhM.png)
+![streamlit web app](https://imgur.com/mca2onp.png)
 
 ## Notebooks
 
