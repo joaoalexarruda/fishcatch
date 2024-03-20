@@ -16,6 +16,8 @@ There is a simple web app that uses the trained model to let any user make predi
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ipp-fishcatch-jsnlmhotzb5cksxqsxhpth.streamlit.app/)
 
+![streamlit web app](https://imgur.com/9BKCGhM.png)
+
 ## Notebooks
 
 I highly recommend reading the [notebooks](./notebooks/) in nbviewer, as the github rendering is not perfect. You can access the notebooks in nbviewer by clicking the following links:
@@ -38,12 +40,6 @@ On the original dataset, there was a variable called 'Sex' which was removed fro
 ## Assignment requirements
 
 The assignment requires the tasks described in the [pdf](./task-description/ADAA_23.24_TrabalhoPrático.pdf) file.
-
-## Results
-
-The results of the models are in the following image:
-
-![results](https://imgur.com/28IoFZE.png)
 
 ## Dependencies
 

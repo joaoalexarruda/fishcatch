@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 
+
 def app():
     st.set_page_config(page_title="Fishcatch", page_icon="🐟")
 
@@ -26,11 +27,12 @@ def app():
         by [joaoalexarruda](https://github.com/joaoalexarruda)
         '''
     )
-    
-    
+
     loaded_model = joblib.load('linear_regression_model.pkl')
 
     st.divider()
+
+    st.image('https://imgur.com/JU41HUE.png')
 
     st.write('### Make a prediction:')
 
