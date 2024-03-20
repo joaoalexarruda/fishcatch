@@ -41,6 +41,12 @@ On the original dataset, there was a variable called 'Sex' which was removed fro
 
 The assignment requires the tasks described in the [pdf](./task-description/ADAA_23.24_TrabalhoPrático.pdf) file.
 
+## Results
+
+The results of the models are in the following image:
+
+![results](https://imgur.com/28IoFZE.png)
+
 ## Dependencies
 
 Run the following command on a python environment to install the required dependencies:
