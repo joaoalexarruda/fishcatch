@@ -28,7 +28,10 @@ def app():
         '''
     )
 
-    loaded_model = joblib.load('linear_regression_model.pkl')
+    try:
+        loaded_model = joblib.load('linear_regression_model.pkl')
+    except FileNotFoundError:
+        loaded_model = joblib.load('../linear_regression_model.pkl')
 
     st.divider()
 
@@ -57,7 +60,7 @@ def app():
     if st.button('Predict'):
         prediction = loaded_model.predict(
             [[length1, length2, length3, height]])
-        st.write(f'Predicted Width: {prediction[0]:.2f}')
+        st.write(f'#### Predicted Width: {prediction[0]:.2f}')
 
 
 app()
