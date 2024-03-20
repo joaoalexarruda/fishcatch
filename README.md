@@ -10,6 +10,10 @@ This repository contains the 'fishcatch' dataset. This project is part of an ass
 
 The goal is to apply machine learning techniques to the dataset and to evaluate the results. In this case, regression techniques such as linear and polynomial regression will be used to predict the width of the fish based on the other variables.
 
+## Assignment tasks
+
+The assignment requires the tasks described in the [task description pdf](./task-description/ADAA_23.24_TrabalhoPrático.pdf) file.
+
 ## Streamlit Web App
 
 There is a simple web app that uses the trained model to let any user make predictions in a friendly page. Access it by clicking the following link:
@@ -36,10 +40,6 @@ I highly recommend reading the [notebooks](./notebooks/) in nbviewer, as the git
 More information about the dataset can be found in the [original source](https://jse.amstat.org/datasets/fishcatch.txt).
 
 On the original dataset, there was a variable called 'Sex' which was removed from this dataset.
-
-## Assignment requirements
-
-The assignment requires the tasks described in the [pdf](./task-description/ADAA_23.24_TrabalhoPrático.pdf) file.
 
 ## Results
 
